@@ -3,7 +3,7 @@ require("dotenv").config({ path: ".env" });
 
 async function main() {
   const whitelistContract = "0x6BB6b7b4cE62Ae9e73ada7772bDCA9cFe39dA30e";
-  const metadataURL = "";
+  const metadataURL = "https://lw-3-nft-collection-psi.vercel.app/api/";
   const cryptoDevsContract = await ethers.getContractFactory("CryptoDevs");
 
   const deployedCryptoDevsContract = await cryptoDevsContract.deploy(
